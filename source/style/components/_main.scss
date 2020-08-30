@@ -1,0 +1,431 @@
+.container-main {
+    display: flex;
+    max-width: 1300px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width: 1030px;  
+    background-color: $main-background;
+}
+ 
+.revenue__progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 704px;
+    padding: 3rem;
+    margin: 1rem;
+    background-color: $white;
+}
+
+.revenue-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    h5 {
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        color: $primary-color;
+    }
+}
+
+.revenue-time {
+    display: flex;
+    flex-direction: row;
+    
+    .revenue-time__btn {
+        padding: 8px 16px;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h4;
+        color: $revenue-time;
+        border: none;
+        background-color: transparent;
+    }
+
+    .revenue-time__btn:hover {
+        border-radius: 3rem;
+        color: $white;
+        background: $textGradient;
+    }
+
+    .revenue-time__other {
+        margin-left: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.revenue-chart {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-chart {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        li {
+            font-weight: map-get($font-weights, bold);
+            font-size: $h4;
+            color: $revenue-time;
+        }
+    }
+}
+
+.horizontal-chart {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li {
+            font-weight: map-get($font-weights, bold);
+            font-size: $h4;
+            color: $revenue-time;
+        }
+    }
+}
+
+.revenue__hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 7rem;
+    margin: 1rem;
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 3rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        color: $primary-color;
+    }
+
+    img {
+        width: 12.4rem;
+        height: 12.4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.hour-statistic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-weight: map-get($font-weights, bold);
+        font-size: $h4;   
+        color: $textColor;
+    }
+
+    .triangle-up {
+        @include triangle-up;
+    }
+
+    .triangle-down {
+        @include triangle-down;
+    }
+}
+// Customer feed block
+.customers__feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 3rem;
+    width: 460px;
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 4rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        color: $primary-color;
+    }
+}    
+
+.customer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sophie-feed {
+    display: flex;
+    flex-direction: row;
+}
+
+.sophie-photo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+
+    img {
+        margin-bottom: 1.3rem;
+    }
+    
+    p {
+        font-weight: map-get($font-weights, regular);
+        font-size: $thesmallest;
+        color: $feed-time;
+    }
+}    
+
+.sophie-feed-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li blockquote {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-weight: map-get($font-weights, light);
+        font-size: $h4;
+        line-height: 1;
+        text-align: justify;
+        color: $feed-text;
+        border: 1px solid $feed-border;
+        background-color: $feed-background;
+        
+        span {
+            font-weight: map-get($font-weights, bold);
+            color: #777777;
+        }
+    }
+}
+
+.sophie-feed-list--sub {
+    border-left: 2px solid $feed-border;
+
+    li blockquote {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-weight: map-get($font-weights, light);
+        font-size: $h4;
+        line-height: 1;
+        text-align: justify;
+        color: $feed-text;
+        border: 1px solid $feed-border;
+        background-color: $feed-background;
+        
+        span {
+            font-weight: map-get($font-weights, bold);
+            color: #777777;
+        }
+    }
+}
+
+.sub-text {
+    p {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-weight: map-get($font-weights, regular);
+        font-size: $h4;
+        line-height: 1;
+        text-align: justify;
+        color: $feed-text;
+        border: 1px solid $feed-border;
+        background-color: $feed-background;
+
+        span {
+            font-weight: map-get($font-weights, bold);
+            color: #777777;
+        }
+    }
+}
+
+.peter-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}    
+
+.peter-photo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+
+    img {
+        margin-bottom: 1.3rem;
+    }
+    
+    p {
+        font-weight: map-get($font-weights, regular);
+        font-size: $thesmallest;
+        color: $feed-time;
+    }
+}
+
+.peter-feed__blockquote {
+    li blockquote {
+        padding: 2rem;
+        font-weight: map-get($font-weights, light);
+        font-size: $h4;
+        line-height: 1;
+        text-align: justify;
+        color: $feed-text;
+        border: 1px solid $feed-border;
+        background-color: $feed-background;
+        overflow: hidden;
+        
+        span {
+            font-weight: map-get($font-weights, bold);
+            color: #777777;
+        }
+    }
+}
+// Todays block
+.todays {
+    margin: 1rem;
+}
+
+.todays__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// Todays - tasks
+.tasks {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    width: 501px;
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 2rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        color: $primary-color;
+    }
+}
+
+.tasks__form {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tasks-form__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 1px solid $label-border;
+
+    label {
+        margin-right: 3rem;
+
+        span {
+            font-weight: map-get($font-weights, bold);
+            font-size: $h4;
+            color: $label-color;
+        }
+    }
+
+    .label__desc {
+        margin-right: 2rem;
+        font-weight: map-get($font-weights, regular);
+        font-size: $h4;
+        color: $secondary-color;
+    }
+}
+
+.tasks-form__item:last-child {
+    border-bottom: 1px solid $label-border;
+}
+
+.tasks__input {
+    margin-right: 1.2rem;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        margin-right: 1rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .label__time {
+        font-weight: map-get($font-weights, bold);
+        font-size: $h4;
+        color: $time-color;
+    }
+}
+// Todays - progress
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 3rem;
+    width: 241px;
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 3rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        color: $primary-color;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h5;
+        background: $progress-gradient;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+    }
+}
+// Todays - shipments
+.shipments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 3rem;
+    width: 241px;
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 3rem;
+        font-weight: map-get($font-weights, bold);
+        font-size: $h2;
+        text-align: center;
+        color: $primary-color;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+}
+
+.shipment-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .shipment-desc__number {
+        font-weight: map-get($font-weights, bold);
+        font-size: $h5;
+        @include gradient;
+    }
+}

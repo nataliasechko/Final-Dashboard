@@ -1,0 +1,64 @@
+.header--section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: antiquewhite;
+        padding: 2rem 0;
+}
+
+.statistic__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin: 0 3rem;       
+
+        h4 {
+                font-weight: map-get($font-weights, bold);
+                font-size: $h4;   
+                text-transform: capitalize;
+                color: $statisticTitle;   
+        }
+
+        h5 {
+                margin: 1rem 0;
+                font-weight: map-get($font-weights, bold);
+                font-size: $h5;   
+                @include gradient;
+        }
+
+        .statistic__block-btn {
+                margin: 1rem 0;
+                font-weight: map-get($font-weights, bold);
+                font-size: $h5;   
+                border: none;
+                @include gradient; 
+        }    
+
+        .statistic__block-btn:hover {
+                background: $white;
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;
+        }
+}
+
+.statistic__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+                font-weight: map-get($font-weights, bold);
+                font-size: $h4;   
+                color: $textColor;
+        }
+
+        .triangle-up {
+                @include triangle-up;  
+        }
+
+        .triangle-down {
+                @include triangle-down;
+        }
+}

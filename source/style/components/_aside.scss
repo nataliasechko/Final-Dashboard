@@ -1,0 +1,119 @@
+.container-aside {
+    max-width: 273px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $white;
+}
+
+.aside-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $navBackground; 
+}
+
+.aside-tab__button {
+    border: none;
+    background: transparent;
+    padding: 1.5rem 3rem;
+
+    img {
+        width: 24px;
+        height: 20px;
+    }
+}
+
+.aside-tab__button:hover {
+    background: $aside-tab-hover;
+}
+
+.aside-list {
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.aside__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    border-bottom: 1px solid $feed-border;
+
+    .aside-tab__user-photo {
+        width: 43px;
+        height: 43px;
+        margin-bottom: 2rem;
+    }
+}
+
+.aside__block:last-child {
+    margin-bottom: 4rem;
+}
+
+.user__data {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-weight: map-get($font-weights, bold); 
+        font-size: $h3;
+        color: $asideUserName;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        font-weight: map-get($font-weights, regular); 
+        font-size: $small;
+        color: $textColor;
+    }
+}
+
+.aside__form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: $aside-searcg-background;
+    border-top: 1px solid $feed-border;
+    border-bottom: 1px solid $feed-border;
+
+    .aside__form-btn {
+        position: absolute;
+        top: 2rem;
+        right: 4rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .aside__form-btn--pencil {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.aside__form-input {
+    width: 16rem;
+    padding: 1rem;
+    background-color: $aside-searcg-background;
+    border: none;
+    border-bottom: 1px solid $asideBorder;
+    outline: none;
+}
+
+.aside__form-input::placeholder {
+    font-weight: map-get($font-weights, regular); 
+    font-size: $small;
+    color: $aside-search-placeholder;
+}

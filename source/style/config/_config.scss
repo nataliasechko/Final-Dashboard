@@ -1,0 +1,52 @@
+// Colors
+$primary-color: #777777;
+$secondary-color: #BFBFBF;
+$white: #fff;
+$navBackground: linear-gradient(to bottom, #FC755A,#FD5570);
+$logoColor: linear-gradient(#FC725C, #FD5073);
+$headerItemBorder: #F1F1F1;
+$borderHeader: #F1F1F1;
+$searchBackground: #F8F8F8;
+$searchBorder: #F1F1F1;
+$searchPlaceholder: #C8C8C8;
+$textGradient:  linear-gradient(90deg, rgba(253,78,117,1), rgba(252,119,89,1));
+$textColor: #BFBFBF;
+$statisticTitle: #838383;
+$triangle-up: #A889E9;
+$triangle-down: #FD5670;
+$main-background: #EDEDED;
+$revenue-time:#CDCDCD;
+$feed-text: #C8C8C8;
+$feed-time: #A7A7A6;
+$label-color: #FD566F;
+$label-border: #EDEDED;
+$time-color: #9C9C9C;
+$progress-gradient: linear-gradient(90deg, #708AE6, #8841AF);
+$feed-border: #F1F1F1;
+$feed-background: #FCFCFC;
+$asideUserName: #838383;
+$asideBorder: #F1F1F1;
+$aside-search-placeholder: #C4C4C4;
+$aside-searcg-background: #FCFCFC; 
+$aside-tab-hover: #C54357;
+$rdio-background: linear-gradient(90deg, #B373E0, #6D5BB6);
+$css-background: linear-gradient(90deg, #51E3C5, #4CBFC3);
+$deviantart-background: linear-gradient(90deg, #EDAD93, #B3727B);
+$xing-background: linear-gradient(90deg, #7381DF, #9961BB);
+$vimeo-background: linear-gradient(90deg, #2EC5DE, #538DE7);
+$vk-background: linear-gradient(90deg, #FCDD95, #F59283);
+
+// Font-sizes
+$font-weights: (
+    "regular": 400,
+    "light": 300,
+    "bold": 700
+);
+
+$logo: 3rem;
+$h2: 1.4rem;
+$h4: 1.2rem;
+$h5: 2rem;
+$h3: 1.3rem;
+$small: 1rem;
+$thesmallest: 0.8rem;

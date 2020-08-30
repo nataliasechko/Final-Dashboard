@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background: $white;
+
+    h2 {
+        margin-bottom: 3rem;
+        font-weight: map-get($font-weights, bold); 
+        font-size: $h2;
+        color: $primary-color;
+    }
+}
+
+.footer__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .footer__list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        margin: 5px;
+        border-radius: 30%;
+        box-shadow: 0 0 5px rgba(192, 192, 192, 0.9);
+    }
+}
+
+.footer__list-item--rdio {
+    background: $rdio-background; 
+}
+
+.footer__list-item--css {
+    background: $css-background;
+}
+
+.footer__list-item--deviantart {
+    background: $deviantart-background;
+}
+
+.footer__list-item--xing {
+    background: $xing-background;
+}
+
+.footer__list-item--vimeo {
+    background: $vimeo-background;
+}
+
+.footer__list-item--vk {
+    background: $vk-background;
+}
